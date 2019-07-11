@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Haseeb Elahi - Computer Scientist, Software Engineer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Haseeb Elahi - Computer Scientist, Software Engineer">
+	<meta name="author" content="Haseeb Elahi">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<script type="text/javascript">
+		function markAllMenuItemsInactive() {
+			const menuItems = document.getElementById('menu-items').children;
+			for (let i = 0; i < menuItems.length; i++) {
+				const element = menuItems[i];
+				element.className = '';
+			}
+		}
+
+		function setActiveMenu(hash) {
+			markAllMenuItemsInactive();
+			switch (hash) {
+				case '#home':
+					document.getElementById('home-menu').className = 'colorlib-active';
+					break;
+				case '#articles':
+					document.getElementById('articles-menu').className = 'colorlib-active';
+					break;
+				case '#photography':
+					document.getElementById('photography-menu').className = 'colorlib-active';
+					break;
+				default:
+					document.getElementById('home-menu').className = 'colorlib-active';
+					break;
+			}
+		}
+		window.onhashchange = function () {
+			setActiveMenu(location.hash);
+		}
+		window.addEventListener('load', () => {
+			console.log('loaded');
+			setActiveMenu(location.hash);
+		});
+		document.addEventListener('scroll', () => {
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<h1 id="colorlib-logo"><a href="#home">he<span style="color: white;">.</span></a></h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul id="menu-items">
+					<li id="home-menu"><a href="#home">Home <span class="icon-home"></span></a></li>
+					<li id="articles-menu"><a href="#articles">Posts <span class="icon-file-text"></span></a></li>
+					<!-- <li id="projects-menu"><a href="#projects">Projects</a></li> -->
+					<li id="photography-menu"><a href="#photography">Photos <span class="icon-instagram"></span></a></li>
+					<li id="contact-menu"><a href="#home">Get in Touch <span class="icon-phone"></span></a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy; <script>
+						document.write(new Date().getFullYear());
+					</script> All rights reserved | Powered by <a href="https://colorlib.com"
+						target="_blank">Colorlib.</a>
+			</div>
+		</aside> <!-- END COLORLIB-ASIDE -->
+		<div id="colorlib-main">
+			<div id="home" class="hero-wrap js-fullheight"
+				style="background-image: url(images/cup-desk-drink-434337.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="js-fullheight d-flex justify-content-center align-items-center">
+					<div class="col-md-8 text text-center">
+						<div class="img mb-4" style="background-image: url(images/haseeb.jpg);"></div>
+						<div class="desc">
+							<h2 class="subheading">Hello I'm</h2>
+							<h1 class="mb-4">Haseeb Elahi</h1>
+							<p class="mb-4 white">Software engineer at <a href="http://www.conradlabs.com/"
+									target="_blank">Conrad Labs</a>, a launchpad for startups mainly based in Austin,
+								TX. I usually work <em>full stack</em> on some cool web & cloud-based products
+								(currently engaged with <a href="https://www.quantifiedcommunications.com/"
+									target="_blank">this one</a>). My usual day involves writing Javascript/Typescript
+								code, tweaking CSS styles, developing APIs, scouring through databases, and making the
+								code clean, reusable and extendable.</p>
+							<ul class="ftco-social mt-3">
+								<li class="ftco-animate"><a href="https://github.com/haseebelahi" target="_blank"><span
+											class="icon-github"></span></a></li>
+								<li class="ftco-animate"><a href="https://twitter.com/haseebelaahi"
+										target="_blank"><span class="icon-twitter"></span></a></li>
+								<li class="ftco-animate"><a href="https://www.linkedin.com/in/haseebelaahi/"
+										target="_blank"><span class="icon-linkedin"></span></a></li>
+								<li class="ftco-animate">
+									<a href="https://dev.to/haseebelaahi" target="_blank">
+										<img class="custom-icon"
+											src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+											alt="haseeb's DEV Profile" height="30" width="30">
+									</a>
+								</li>
+								<li class="ftco-animate">
+									<a href="http://m.me/haseebelaahi" target="_blank">
+										<img class="custom-icon" src="https://user-images.githubusercontent.com/1915993/32196425-b3e7e484-bdd1-11e7-92ef-b65c5eb8b307.png" alt="haseeb's Messenger" height="30" width="30">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="ftco-section">
+				<div class="container">
+					<div class="row justify-content-center pb-2" id="articles">
+						<div class="col-md-7 heading-section text-center ftco-animate">
+							<h2 class="mb-4">Blog Posts <span class="icon-file-text"></span></h2>
+							<p>Some of the blog posts I have written over time.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="https://dev.to/haseebelaahi/what-i-found-when-i-went-through-my-facebook-location-data-89j"
+									target="_blank" class="img img-2"
+									style="background-image: url(images/articles/location-article.jpeg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block">Security</span>
+									<h3 class="mb-4"><a
+											href="https://dev.to/haseebelaahi/what-i-found-when-i-went-through-my-facebook-location-data-89j"
+											target="_blank">What I Found When I Went Through My Facebook Location
+											Data</a></h3>
+									<p class="mb-4">Some visualizations and stats on my facebook location data and the
+										results, well you could say are not very pleasant.</p>
+
+									<div class="meta-wrap align-items-center">
+										<div class="half">
+											<p><a href="https://dev.to/haseebelaahi/what-i-found-when-i-went-through-my-facebook-location-data-89j"
+													target="_blank" class="py-2">Continue Reading> <span
+														class="ion-ios-arrow-forward"></span></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ftco-section-2">
+				<div class="photograhy" id="photography">
+					<div class="row justify-content-center pb-2" id="articles">
+						<div class="col-md-7 heading-section text-center ftco-animate">
+							<h2 class="mb-4">Random Photos <span class="icon-instagram"></span></h2>
+							<p>Some of the photos I casually take.</p>
+						</div>
+					</div>
+					<!-- LightWidget WIDGET -->
+					<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+					<iframe src="//lightwidget.com/widgets/9d560608bdb3574ab983d29d22f489d9.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+				</div>
+			</section>
+			<footer class="ftco-footer ftco-bg-dark">
+				<div class="container px-md-5 pt-2 pb-1">
+					<div class="row">
+						<div class="col-md-12">
+
+							<span>
+								Haseeb Elahi | Copyright © 2019 All rights reserved.
+							</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
