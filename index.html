@@ -18,43 +18,29 @@
 
 
 	<script type="text/javascript">
+		const menuItems = Array.from(document.querySelectorAll('#menu-items > li'));
+
 		function markAllMenuItemsInactive() {
-			const menuItems = document.getElementById('menu-items').children;
-			for (let i = 0; i < menuItems.length; i++) {
-				const element = menuItems[i];
-				element.className = '';
-			}
+		  menuItems.forEach(item => item.classList.remove('colorlib-active'));
 		}
 
 		function setActiveMenu(hash) {
-			markAllMenuItemsInactive();
-			switch (hash) {
-				case '#home':
-					document.getElementById('home-menu').className = 'colorlib-active';
-					break;
-				case '#whatdoIdo':
-					document.getElementById('whatdoido-menu').className = 'colorlib-active';
-					break;
-				case '#articles':
-					document.getElementById('articles-menu').className = 'colorlib-active';
-					break;
-				case '#photography':
-					document.getElementById('photography-menu').className = 'colorlib-active';
-					break;
-				default:
-					document.getElementById('home-menu').className = 'colorlib-active';
-					break;
-			}
-		}
-		window.onhashchange = function () {
-			setActiveMenu(location.hash);
-		}
-		window.addEventListener('load', () => {
-			console.log('loaded');
-			setActiveMenu(location.hash);
-		});
-		document.addEventListener('scroll', () => {
+		  markAllMenuItemsInactive();
 
+		  const id = hash.slice(1);
+		  const activeItem = menuItems.find(item => item.id === id + '-menu');
+		  if (activeItem) {
+		    activeItem.classList.add('colorlib-active');
+		  }
+		}
+
+		window.addEventListener('hashchange', () => {
+		  setActiveMenu(location.hash);
+		});
+
+		window.addEventListener('load', () => {
+		  console.log('loaded');
+		  setActiveMenu(location.hash);
 		});
 	</script>
 </head>
